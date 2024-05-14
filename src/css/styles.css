@@ -1,0 +1,146 @@
+body {
+    height: 100vh;
+    background: url('/src/files/image1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.central {
+    background-color: rgba(0, 0, 0, 0.745);
+    height: 450px;
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* box-shadow: 3px 3px 8px rgba(255, 255, 255, 0.446); */
+    gap: 15px;
+    padding: 15px;
+    color: white;
+}
+
+#titulo {
+
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+
+}
+
+.central span {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.central input {
+    height: 25px;
+    width: 250px;
+    outline: none;
+
+}
+
+.central button {
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    background: rgb(255, 255, 255);
+    /* box-shadow: 2px 2px 3px rgb(117, 117, 117); */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.central button:hover {
+    background: rgb(0, 0, 255);
+    color: white;
+}
+
+.central #resultado {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    .central {
+
+        width: 70%;
+
+    }
+
+}
+
+@media (max-width: 510px) {
+
+    #titulo {
+
+        font-size: 35px;
+
+    }
+
+    .central input {
+
+        width: 75%;
+
+    }
+
+    .central #resultado {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    #titulo {
+
+        font-size: 20px;
+
+    }
+
+
+
+    .central span {
+        font-size: 12px;
+
+    }
+
+    .central input {
+
+        height: 20px;
+
+    }
+
+    .central button {
+        height: 7%;
+        width: 50%;
+    }
+
+    .central #resultado {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .central {
+
+        height: 70%;
+        gap: 5px;
+    }
+
+
+}
